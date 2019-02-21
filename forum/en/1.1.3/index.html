@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+        <title>Forum | Heart Mate</title>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#f24e32">
+    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f24e32">
+    <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f24e32">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> -->
+
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- 访问统计 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/heartmate/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/heartmate/js/vue.js"></script>
+    <script>
+      Vue.config.productionTip = false
+      window.PAGE_TYPE = "Forum"
+    </script>
+
+    <!-- ga -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46852172-3', 'cn.vuejs.org');
+      ga('send', 'pageview');
+    </script>
+    <!-- docsearch -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+  </head>
+  <body class="docs">
+    <div id="mobile-bar">
+      
+        <a class="menu-button fa fa-ellipsis-v"></a>
+      
+      
+        <h2 class="nav-title">Forum</h2>
+      
+    </div>
+    <div id="header">
+  <a id="logo" href="/heartmate/">
+    <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@18.12.27/favicon/favicon.ico">
+    <span>Heart Mate</span>
+  </a>
+  <ul id="nav">
+    
+
+<li class="nav-dropdown-container help">
+  <a class="nav-link " href="/heartmate/help/"><i class="fa fa-stethoscope fa-fw"></i>&nbsp;帮助</a>
+  <ul class="nav-dropdown">
+    
+      
+        <li>
+          <a href="/heartmate/help/index.html" class="nav-link"><i class="fa fa-stethoscope fa-fw"></i>&nbsp;欢迎您使用HeartMate</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="/heartmate/help/record/index.html" class="nav-link"><i class="fa fa-stethoscope fa-fw"></i>&nbsp;如何进行测量？</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="/heartmate/help/urlschemes/index.html" class="nav-link"><i class="fa fa-stethoscope fa-fw"></i>&nbsp;如何使用URL Schemes？</a>
+        </li>
+      
+    
+  </ul>
+</li>
+
+
+<li class="nav-dropdown-container forum">
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+  <a class="nav-link current" href="/heartmate/forum/1.1.3/index.html"><i class="fa fa-comments fa-fw"></i>&nbsp;论坛</a>
+</li>
+
+
+<li class="nav releases">
+  <a class="nav-link " href="/heartmate/releases/"><i class="fa fa-code-fork fa-fw"></i>&nbsp;更新日志</a>
+</li>
+
+<li class="nav download">
+  <a class="nav-link" target="_blank" href="https://itunes.apple.com/cn/app/heartrate-mate/id1361869971?ls=1&mt=8/" rel="external nofollow noopener noreferrer"><i class="fa fa-download fa-fw"></i>&nbsp;下载</a>
+</li>
+
+<li class="nav-dropdown-container more">
+  <a class="nav-link "><i class="fa fa-ellipsis-v fa-fw"></i>&nbsp;更多</a>
+  <ul class="nav-dropdown">
+    <li><ul>
+      <li><a class="nav-link" target="_blank" href="https://app.termly.io/document/privacy-policy/89e335e8-0644-4743-94b5-84229fbf6037" rel="external nofollow noopener noreferrer"><i class="fa fa-shield fa-fw"></i>&nbsp;隐私政策</a></li>
+      <hr>
+      <li><a class="nav-link" target="_blank" href="https://xaoxuu.com/"><i class="fa fa-globe fa-fw"></i>&nbsp;开发者网站</a></li>
+      <li><a class="nav-link" target="_blank" href="mailto:me@xaoxuu.com"><i class="fa fa-envelope fa-fw"></i>&nbsp;发送邮件</a></li>
+    </ul></li>
+
+  </ul>
+</li>
+
+  </ul>
+</div>
+
+    
+      <div id="main" class="fix-sidebar">
+        
+          
+  <div class="sidebar">
+  
+    <div class="sidebar-inner">
+      
+      
+        <div class="list">
+          <h2>
+            
+            Forum
+          </h2>
+          <ul class="menu-root">
+  
+    
+    
+    <li>
+      <a href="/heartmate/forum/en/index.html" class="sidebar-link"></a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/heartmate/forum/en/1.1.3/index.html" class="sidebar-link current">1.1.3</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/heartmate/forum/en/1.1.2/index.html" class="sidebar-link">1.1.2</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/heartmate/forum/en/1.1.1/index.html" class="sidebar-link">1.1.1</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/heartmate/forum/en/1.1/index.html" class="sidebar-link">1.1</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/heartmate/forum/en/1.0/index.html" class="sidebar-link">1.0</a>
+    </li>
+  
+</ul>
+
+        </div>
+      
+    </div>
+  
+</div>
+
+
+<div class="content Forum with-sidebar ">
+  
+    
+  
+  
+    <h1>1.1.3</h1>
+  
+  
+    <p>Your questions about heart mate, bugs feedback and feature suggestions or any other ideas can be told in the comments of <a href="heartmate://forum/latest" rel="external nofollow noopener noreferrer" target="_blank">current version</a>.</p>
+
+  
+  
+  
+  
+    
+      <h2 id="Comments"><a href="#Comments" class="headerlink" title="Comments"><i class="fa fa-comments" aria-hidden="true"></i>Comments</a></h2>
+      <p>In order to distinguish and receive reply reminders, please fill in the <b>nickname</b> and <b>E-Mail</b> when you leave a message. </p>
+    
+    
+    <section id="comments">
+      <div id="valine_container" class="valine_thread">
+        <i class="fa fa-spinner fa-spin fa-fw"></i>
+      </div>
+    </section>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    <script>
+      var GUEST_INFO = ['nick','mail','link'];
+      var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+      });
+      var notify = 'false' == true;
+      var verify = 'false' == true;
+      var valine = new Valine();
+      valine.init({
+        el: '#valine_container',
+        notify: notify,
+        verify: verify,
+        guest_info: guest_info,
+        appId: "Sktz9AuJQwzEPPCIp2Faj00m-gzGzoHsz",
+        appKey: "jtqOVB4rUomSlMVpXJDYvMCE",
+        
+          placeholder: "Leave your messages here ~",
+        
+        pageSize:'20',
+        avatar:'mp',
+        
+          lang:'en'
+        
+      })
+    </script>
+  
+
+
+  <!-- <div class="footer">
+
+    发现错误？想参与编辑？
+    <a href="https://github.com/vuejs/cn.vuejs.org/blob/master/src/forum/en/1.1.3/index.md" target="_blank">
+      在 GitHub 上编辑此页！
+    </a>
+
+  </div> -->
+
+</div>
+
+        
+      </div>
+      <script src="/heartmate/js/smooth-scroll.min.js"></script>
+    
+
+    <!-- main custom script for sidebars, version selects etc. -->
+    <script src="/heartmate/js/css.escape.js"></script>
+    <script src="/heartmate/js/common.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script type="text/javascript"> docsearch({
+      apiKey: '61d37d2f5a18c23f570b08f52ae30196',
+      indexName: 'xaoxuu',
+      inputSelector: 'search-query-menu',
+      debug: false // Set debug to true if you want to inspect the dropdown
+      });
+    </script>
+    <script type="text/javascript">
+    function changeFrameHeight(){
+        var ifm= document.getElementById("iframepage");
+        ifm.height=document.documentElement.clientHeight;
+
+    }
+
+    window.onresize=function(){
+         changeFrameHeight();
+
+    }
+    </script>
+    <!-- fastclick -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      FastClick.attach(document.body)
+    }, false)
+    </script>
+  </body>
+</html>
