@@ -1,0 +1,47 @@
+
+<% var tabname_help = "帮助" %>
+<li class="nav-dropdown-container help">
+  <a class="nav-link <%- page.path.match(/help(\/|$)/) ? 'current' : '' %>" href="<%- url_for("/help/") %>"><i class='fa fa-stethoscope fa-fw'></i>&nbsp;<%- tabname_help %></a>
+  <ul class="nav-dropdown">
+    <% site.pages.find({type: tabname_help}).sort('order').each(function (p) { %>
+      <% if(p.title && p.title != tabname_help) {%>
+        <li>
+          <a href="<%- url_for(p.path) %>" class="nav-link"><i class='fa fa-stethoscope fa-fw'></i>&nbsp;<%- p.title %></a>
+        </li>
+      <% } %>
+    <% }) %>
+  </ul>
+</li>
+
+<% var tabname_forum = "论坛" %>
+<li class="nav-dropdown-container forum">
+  <% var url_latest_forum = "/forum/" %>
+  <% site.pages.find({type: tabname_forum}).sort('-order').each(function (p) { %>
+    <% if(p.title && p.title != tabname_forum) {%>
+      <% url_latest_forum = p.path %>
+    <% } %>
+  <% }) %>
+  <a class="nav-link <%- page.path.match(/forum(\/|$)/) ? 'current' : '' %>" href="<%- url_for(url_latest_forum) %>"><i class='fa fa-comments fa-fw'></i>&nbsp;<%- tabname_forum %></a>
+</li>
+
+<% var tabname_releases = "更新日志" %>
+<li class="nav releases">
+  <a class="nav-link <%- page.path.match(/releases(\/|$)/) ? 'current' : '' %>" href="<%- url_for("/releases/") %>"><i class='fa fa-code-fork fa-fw'></i>&nbsp;<%- tabname_releases %></a>
+</li>
+
+<li class="nav download">
+  <a class="nav-link" target="_blank" href="https://itunes.apple.com/cn/app/heartrate-mate/id1361869971?ls=1&mt=8/"><i class='fa fa-download fa-fw'></i>&nbsp;下载</a>
+</li>
+
+<li class="nav-dropdown-container more">
+  <a class="nav-link <%- page.path.match(/more(\/|$)/) ? 'current' : '' %>"><i class='fa fa-ellipsis-v fa-fw'></i>&nbsp;更多</a>
+  <ul class="nav-dropdown">
+    <li><ul>
+      <li><a class="nav-link" target="_blank" href="https://app.termly.io/document/privacy-policy/89e335e8-0644-4743-94b5-84229fbf6037"><i class='fa fa-shield fa-fw'></i>&nbsp;隐私政策</a></li>
+      <hr>
+      <li><a class="nav-link" target="_blank" href="https://xaoxuu.com/"><i class='fa fa-globe fa-fw'></i>&nbsp;开发者网站</a></li>
+      <li><a class="nav-link" target="_blank" href="mailto:<%- config.email %>"><i class='fa fa-envelope fa-fw'></i>&nbsp;发送邮件</a></li>
+    </ul></li>
+
+  </ul>
+</li>

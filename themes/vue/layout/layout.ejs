@@ -1,0 +1,116 @@
+<% var isIndex = page.path === 'index.html' %>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <% if(page.type || page.title) { %>
+        <title><%= page.type || page.title %> | <%= config.title %></title>
+    <% } else { %>
+        <title><%= config.title %></title>
+    <% } %>
+    <meta charset="utf-8">
+    <meta name="description" content="<%- theme.site_description %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#f24e32">
+    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f24e32">
+    <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f24e32">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> -->
+
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- 访问统计 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- main page styles -->
+    <%- css(isIndex ? 'css/index' : 'css/page') %>
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="<%- url_for("/js/vue.js") %>"></script>
+    <script>
+      Vue.config.productionTip = false
+      window.PAGE_TYPE = "<%- page.type %>"
+    </script>
+
+    <!-- ga -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '<%- theme.google_analytics %>', '<%- theme.root_domain %>');
+      ga('send', 'pageview');
+    </script>
+    <!-- docsearch -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  </head>
+  <body class="<%- isIndex ? '' : 'docs' -%>">
+    <div id="mobile-bar" <%- isIndex ? 'class="top"' : '' %>>
+      <% if (page.showmenu == false) { %>
+      <% } else { %>
+        <a class="menu-button fa fa-ellipsis-v"></a>
+      <% } %>
+      <% if (page.type || page.title ) { %>
+        <h2 class="nav-title"><%= page.type || page.title %></h2>
+      <% } %>
+    </div>
+    <%- partial('partials/header') %>
+    <% if (!isIndex) { %>
+      <div id="main" class="fix-sidebar">
+        <% if (page.blog_index) { %>
+          <%- partial('partials/blog') %>
+        <% } else { %>
+          <%- body %>
+        <% } %>
+      </div>
+      <script src="<%- url_for("/js/smooth-scroll.min.js") %>"></script>
+    <% } else { %>
+      <%- body %>
+    <% } %>
+
+    <!-- main custom script for sidebars, version selects etc. -->
+    <script src="<%- url_for("/js/css.escape.js") %>"></script>
+    <script src="<%- url_for("/js/common.js") %>"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script type="text/javascript"> docsearch({
+      apiKey: '61d37d2f5a18c23f570b08f52ae30196',
+      indexName: 'xaoxuu',
+      inputSelector: 'search-query-menu',
+      debug: false // Set debug to true if you want to inspect the dropdown
+      });
+    </script>
+    <script type="text/javascript">
+    function changeFrameHeight(){
+        var ifm= document.getElementById("iframepage");
+        ifm.height=document.documentElement.clientHeight;
+
+    }
+
+    window.onresize=function(){
+         changeFrameHeight();
+
+    }
+    </script>
+    <!-- fastclick -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      FastClick.attach(document.body)
+    }, false)
+    </script>
+  </body>
+</html>

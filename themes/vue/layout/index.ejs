@@ -1,0 +1,69 @@
+<div class="sidebar">
+  <div class="sidebar-inner-index">
+    <ul class="main-menu">
+      <br><h2><a href="<%- url_for("/") %>"><%- config.title %></a></h2>
+      <%- partial('partials/main_menu', { context: 'sidebar' }) %>
+    </ul>
+  </div>
+</div>
+
+<div id="hero">
+  <div class="inner">
+    <div class="left">
+      <img class="hero-logo" src="<%- url_for(config.avatar) %>" alt="avatar">
+    </div><div class="right">
+      <h2 class="vue"><%- config.title %></h2>
+      <% if (config.homepage.h1) { %>
+        <h1><%- config.homepage.h1 %></h1>
+      <%}%>
+      <% if (config.homepage.h2) { %>
+        <h1><%- config.homepage.h2 %></h1>
+      <%}%>
+      <% if (config.social) { %>
+        <div class="social-wrapper">
+          <% (config.social||[]).forEach(function(value){ %>
+            <% if (value.url && value.icon) { %>
+              <a href="<%= value.url %>" class="social fa <%= value.icon %>" target="_blank" rel="external"></a>
+            <%}%>
+          <%})%>
+        </div>
+      <%}%>
+    </div>
+
+  </div>
+</div>
+
+<% if (config.motto) { %>
+  <div id="highlights">
+    <div class="inner">
+      <% (config.motto||[]).forEach(function(value){ %>
+        <div class="point">
+          <h2><%= value.title %></h2>
+          <p><%= value.detail %></p>
+        </div>
+      <%})%>
+    </div>
+  </div>
+<%}%>
+
+<%- partial('partials/timeline') %>
+
+<div id="video-modal" class="modal">
+  <div class="video-space" style="padding: 56.25% 0 0 0; position: relative;"></div>
+</div>
+
+<script>
+(function () {
+  var topScrolled = false
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 165 && !topScrolled) {
+      topScrolled = true
+      document.getElementById('mobile-bar').classList.remove('top')
+    } else if (window.pageYOffset <= 165 && topScrolled) {
+      topScrolled = false
+      document.getElementById('mobile-bar').classList.add('top')
+    }
+  })
+})()
+</script>

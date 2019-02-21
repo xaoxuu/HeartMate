@@ -1,0 +1,185 @@
+# Hexo Configuration
+
+# Site
+title: 'Heart Mate'
+subtitle:
+description:
+author: xaoxuu
+email: me@xaoxuu.com
+language: zh-CN
+
+shortcut_icon: https://cdn.jsdelivr.net/gh/xaoxuu/assets@18.12.27/favicon/favicon.ico
+favicon: https://cdn.jsdelivr.net/gh/xaoxuu/assets@18.12.27/favicon/favicon.ico
+avatar: https://img.vim-cn.com/3f/8153dc97b2e4d84e8973f198962b61fa6831ba.png
+
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: 'https://xaoxuu.com/heartmate'
+# url: http://localhost:4000
+root: '/heartmate/'
+permalink: posts/:title/
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+
+# Directory
+source_dir: src
+public_dir: public
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+auto_spacing: false # Add spaces between asian characters and western characters
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+max_open_file: 100
+multi_thread: true
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace: '    '
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Archives
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 0
+category: 0
+tag: 0
+
+# Server
+## Hexo uses Connect as a server
+## You can customize the logger format as defined in
+## http://www.senchalabs.org/connect/logger.html
+port: 4000
+logger: false
+logger_format:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: 'YYYY-MM-DD dddd'
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Disqus
+disqus_shortname:
+
+# Extensions
+## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
+## Themes: https://github.com/tommy351/hexo/wiki/Themes
+theme: vue
+exclude_generator:
+
+# Markdown
+## https://github.com/chjj/marked
+markdown:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+
+homepage:
+  h1: "简单易用的掌上心率计"
+
+# motto:
+#   - title: haha
+#     detail: asdlkfnlasdfndsf
+#   - title: haha
+#     detail: asdlkfnlasdfndsf
+#   - title: haha
+#     detail: asdlkfnlasdfndsf
+
+# valine
+valine:
+  enable: true # 如果你想用Valine评论系统，请设置enable为true
+  appId: Sktz9AuJQwzEPPCIp2Faj00m-gzGzoHsz
+  appKey: jtqOVB4rUomSlMVpXJDYvMCE
+  guest_info: nick,mail,link #valine comment header info
+  placeholder: 快来评论吧~ # valine comment input placeholder(like: Please leave your footprints )
+  avatar: mp # gravatar style https://valine.js.org/avatar
+  pageSize: 20 # comment list page size
+  verify: false # valine verify code (true/false)
+  notify: false # valine mail notify (true/false)
+  lang: zh-cn
+
+
+# Offline
+## Config passed to sw-precache
+## https://github.com/JLHwung/hexo-offline
+offline:
+  maximumFileSizeToCacheInBytes: 10485760
+  staticFileGlobs:
+    - public/**/*.{js,html,css,png,jpg,jpeg,gif,svg,eot,ttf,woff,woff2,json,xml}
+  stripPrefix: public
+  verbose: true
+  runtimeCaching:
+    # Ad Sources - should be networkFirst
+    - urlPattern: /*
+      handler: networkFirst
+      options:
+        origin: sendgrid.sp1.convertro.com
+    - urlPattern: /*
+      handler: networkFirst
+      options:
+        origin: ad.doubleclick.net
+    # CDNs - should be cacheFirst, since they should be used specific versions so should not change
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: fonts.googleapis.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: fonts.gstatic.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdnjs.cloudflare.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: maxcdn.bootstrapcdn.com
+
+nofollow:
+  enable: true
+  exclude:
+    - xaoxuu.com
+
+
+# Deployment
+## Docs: http://zespia.tw/hexo/docs/deployment.html
+deploy:
+- type: git
+  repo: https://github.com/xaoxuu/heartmate.git
+  branch: gh-pages
+  message: update pages
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
