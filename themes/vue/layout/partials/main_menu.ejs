@@ -37,7 +37,8 @@
   <a class="nav-link <%- page.path.match(/more(\/|$)/) ? 'current' : '' %>"><i class='fa fa-ellipsis-v fa-fw'></i>&nbsp;更多</a>
   <ul class="nav-dropdown">
     <li><ul>
-      <li><a class="nav-link" target="_blank" href="https://app.termly.io/document/privacy-policy/89e335e8-0644-4743-94b5-84229fbf6037"><i class='fa fa-shield fa-fw'></i>&nbsp;隐私政策</a></li>
+      <li><a class="nav-link" href="<%- url_for("/agreement/") %>"><i class='fa fa-shield fa-fw'></i>&nbsp;用户协议</a></li>
+      <li><a class="nav-link" href="<%- url_for("/privacy/") %>"><i class='fa fa-shield fa-fw'></i>&nbsp;隐私政策</a></li>
       <hr>
       <li><a class="nav-link" target="_blank" href="https://xaoxuu.com/"><i class='fa fa-globe fa-fw'></i>&nbsp;开发者网站</a></li>
       <li><a class="nav-link" target="_blank" href="mailto:<%- config.email %>"><i class='fa fa-envelope fa-fw'></i>&nbsp;发送邮件</a></li>
