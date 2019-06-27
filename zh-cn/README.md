@@ -2,4 +2,4 @@
 
 # HEART MATE
 
-An easy to use heart rate monitor.
+简单易用的掌上心率计

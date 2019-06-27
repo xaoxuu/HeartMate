@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://xaoxuu.com/assets/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://xaoxuu.com/assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.geekzu.org/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600">
+    <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+    <title>HEART MATE</title>
+  </head>
+
+  <body>
+    <div id="app">Loading...</div>
+  </body>
+
+
+  <script>
+    window.$docsify = {
+
+      name: '<b>HEART MATE</b>',
+
+      // 封面
+      coverpage: false,
+
+      // Search Support
+      search: {
+        maxAge: 120000, // 过期时间，单位毫秒，2分钟
+        paths: 'auto',
+        placeholder: 'Search',
+        noData: 'No Data',
+      },
+
+      // load sidevar from _sidebar.md
+      loadSidebar: true,
+      subMaxLevel: 4,
+      autoHeader: false,
+
+      // 加载 _navbar.md
+      loadNavbar: true,
+      mergeNavbar: true,
+      // 切换到其他页面自动回到顶部
+      auto2top: true,
+
+      fallbackLanguages: ['en', 'zh-cn'],
+
+      // footer
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<footer>',
+            '<span>Powered by <a href="https://xaoxuu.com">xaoxuu</a></span>',
+            '</footer>'
+          ].join('')
+          hook.afterEach(function (html) {
+            return html + footer
+          })
+        }
+      ],
+
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <!-- 代码高亮 -->
+  <script src="//unpkg.com/prismjs/components/prism-c.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-objectivec.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-swift.min.js"></script>
+
+</html>
