@@ -7,6 +7,34 @@
     </url>
     
     <url>
+        <loc>https://xaoxuu.com/heartmate/agreement/</loc>
+        <lastmod>2019-06-27T06:23:23.187Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://xaoxuu.com/heartmate/agreement/en/</loc>
+        <lastmod>2019-06-27T06:23:00.161Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://xaoxuu.com/heartmate/privacy/</loc>
+        <lastmod>2019-06-27T06:22:08.540Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://xaoxuu.com/heartmate/privacy/en/</loc>
+        <lastmod>2019-06-27T06:22:04.980Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://xaoxuu.com/heartmate/releases/</loc>
         <lastmod>2019-02-21T02:16:16.363Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -133,7 +161,7 @@
     </url>
     
     <url>
-        <loc>https://xaoxuu.com/heartmate/forum/1.1.2/</loc>
+        <loc>https://xaoxuu.com/heartmate/forum/1.1.1/</loc>
         <lastmod>2019-02-21T02:16:16.352Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -147,22 +175,8 @@
     </url>
     
     <url>
-        <loc>https://xaoxuu.com/heartmate/forum/1.1.1/</loc>
+        <loc>https://xaoxuu.com/heartmate/forum/1.1.2/</loc>
         <lastmod>2019-02-21T02:16:16.352Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://xaoxuu.com/heartmate/agreement/</loc>
-        <lastmod>2019-02-21T02:16:16.351Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://xaoxuu.com/heartmate/agreement/en/</loc>
-        <lastmod>2019-02-21T02:16:16.351Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
