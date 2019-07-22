@@ -1,6 +1,6 @@
 ## I. General
 
-1.1 The User shall agree to the terms of this Agreement and follow the prompts on the page to complete the registration process. By clicking the "Agree" button during the registration process, the user agrees to the agreement with the application and fully accepts all the terms of this agreement.
+1.1 The User shall agree to the terms of this Agreement and follow the prompts on the page to complete the registration process. By clicking the "ACCEPT" button during the registration process, the user agrees to the agreement with the application and fully accepts all the terms of this agreement.
 
 1.2 After the user is successfully registered, the application will give each user a user account and corresponding password. The user account and password are kept by the user; the user should be legally responsible for all activities and events carried out by his user account.
 
