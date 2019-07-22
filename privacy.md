@@ -81,11 +81,9 @@ This service agreement should be read carefully before using the services of thi
 
 4.5 The Service or a third party may provide links to other websites or resources on the Internet. Since the App has no control over these sites and resources, you should understand and agree that such sites or resources are available for use and that the App is not responsible for any content, advertising, products or other content that exists or originates from such sites or resources. Information, this application is not guaranteed or responsible. This application is not responsible for any damage or loss arising from the use or reliance on any content, goods or services posted on or through such websites or resources.
 
-4.6 The account has not been logged in for six months. This application reserves the right to close.
 
 ## V. Others
 
 5.1 The conclusion, execution and interpretation of this Agreement and resolution of disputes shall be governed by the laws of the People's Republic of China.
 
 5.2 If there is any dispute between the parties regarding the content of this Agreement or its implementation, the parties shall try to resolve it through friendly negotiation; if the negotiation fails, either party may file a lawsuit in the people's court where the application is located.
-
