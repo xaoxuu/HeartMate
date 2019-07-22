@@ -6,7 +6,7 @@
 
 This service agreement should be read carefully before using the services of this application. If you do not agree to the Service Agreement and/or modify it at any time, you may voluntarily cancel the services provided by this application; once you use the service features of this application, you are deemed to have understood and fully agreed to the Service Agreement. Various content and become the user of this application.
 
-## II. Registration information and privacy protection
+## II. Registration Information and Privacy Protection
 
 2.1 The ownership of this application account (that is, the application user ID) belongs to this application. After the user completes the registration application procedure, the user's right to use the application account is obtained. Users should provide timely, detailed and accurate personal information, and constantly update the registration information as the situation changes, in line with timely, detailed and accurate requirements. All original typed materials will be cited as registration materials. This application is not responsible for any problems caused by untrue registration information and for the consequences of the problem.
 
@@ -23,7 +23,7 @@ This service agreement should be read carefully before using the services of thi
 (4) In accordance with the requirements of the relevant government authorities;
 
 
-## III. Usage rules
+## III. Usage Rules
 
 3.1 Users must comply with the relevant laws and regulations of the People's Republic of China when using this application service. Users should agree not to use the service for any illegal or improper activities, including but not limited to the following:
 

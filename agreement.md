@@ -1,4 +1,6 @@
-## Measuring principle
+Before you start using this app, you must understand and accept the following:
+
+## About Measuring Principle
 
 This procedure measures and calculates heart rate values according to **Photoelectric Volume Pulse Waveography (PPG)**.
 
@@ -6,7 +8,7 @@ See Wikipedia: [#Photoplethysmogram](https://en.wikipedia.org/wiki/Photoplethysm
 
 
 
-## Applicable scene
+## Applicable Scene
 
 The significance of this application is that when there are no smart bracelets and smart watches and other professional heart rate monitoring devices, you can use your mobile phone for rough measurements at any time. Therefore, the following scenarios are reasonable:
 
@@ -16,10 +18,10 @@ The significance of this application is that when there are no smart bracelets a
 
 
 
-## Not applicable to the scene
+## Not Applicable Scene
 
 **Once you think there is a problem with your health, please go to a nearby hospital to consult a doctor.**
 
-**The measurement results of this program are for reference only and should not be used for medical purposes.**
+**The measurement results of this app are for reference only and should not be used for medical purposes.**
 
 <br>

@@ -1,6 +1,6 @@
 The following are the urls that open the measurement page, and parameters can be passed as needed. Can be added to the shortcut command, or can be set to wake up via Siri.
 
-## Directly start measuring
+## Directly Start Measuring
 
 ```url
 heartmatepro://record
@@ -8,7 +8,7 @@ heartmatepro://record
 [[Run Demo]](heartmatepro://record)
 
 
-## Custom brightness
+## Custom Brightness
 
 The brightness value `l` is a floating point number, and the value range is `0~1`.
 
