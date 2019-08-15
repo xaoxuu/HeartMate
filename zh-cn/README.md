@@ -1,5 +1,5 @@
-<img src="https://i.loli.net/2019/08/15/yBYdLVtsqmURpcQ.jpg" width="128px">
+<center><img src="https://i.loli.net/2019/08/15/yBYdLVtsqmURpcQ.jpg" width="128px"></center>
 
-# HEART MATE
+<center><h3>HEART MATE<h3></center>
 
-简单易用的掌上心率计
+<center>简单易用的掌上心率计</center>
